@@ -1,0 +1,17 @@
+.mr-2 {
+    margin-right: 10px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
