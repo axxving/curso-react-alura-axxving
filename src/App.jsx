@@ -12,6 +12,5 @@ export const App = () => {
       <Hero />
       <Formulario />
     </>
-
   )
 }
