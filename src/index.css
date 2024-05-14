@@ -1,3 +1,15 @@
+:root {
+    --negro: #242424;
+    --blanco: #ffffff;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 .mr-2 {
     margin-right: 10px;
 }
@@ -8,10 +20,24 @@
     width: 100%;
 }
 
-
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.formulario {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-input {
+    margin-bottom: 15px;
+}
+
+.mt-2 {
+    margin-top: 10px;
 }
