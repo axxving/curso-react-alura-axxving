@@ -35,7 +35,7 @@ export const Formulario = () => {
                     <Form.Group controlId="formMessage">
                         <Form.Control className='form-input' as="textarea" rows={4} placeholder="Mensaje" />
                     </Form.Group>
-                    <Button variant="primary" type="submit"><ChatDotsFill className="mr-2 mt-2" /> Enviar Mensaje</Button>
+                    <Button variant="primary" type="submit"><ChatDotsFill className="mr-2 mb-1" /> Enviar Mensaje</Button>
                 </Form>
             </Container>
         </Container>
