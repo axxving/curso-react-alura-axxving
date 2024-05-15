@@ -19,12 +19,12 @@ export const Formulario = () => {
                 <h2>Contáctanos</h2>
                 <Form onSubmit={manejarEnvio}>
                     <Row>
-                        <Campo controlId="formName" type="text" placeholder="Nombre" />
-                        <Campo controlId="formEmail" type="email" placeholder="Correo Electrónico" />
+                        <Campo titulo="Nombre" controlId="formName" type="text" placeholder="Nombre"  />
+                        <Campo titulo="Correo" controlId="formEmail" type="email" placeholder="Correo Electrónico" />
                     </Row>
                     <Row>
-                        <Campo controlId="formPhone" type="tel" placeholder="Puesto" />
-                        <Campo controlId="formSubject" type="text" placeholder="Foto" />
+                        <Campo titulo="Puesto" controlId="formPhone" type="tel" placeholder="Puesto" />
+                        <Campo titulo="Foto" controlId="formSubject" type="text" placeholder="Foto" />
                     </Row>
                     <Form.Group controlId="formMessage">
                         <Form.Control className='form-input' as="textarea" rows={4} placeholder="Mensaje" />
