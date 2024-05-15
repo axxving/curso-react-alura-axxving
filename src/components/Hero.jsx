@@ -7,7 +7,7 @@ export const Hero = () => {
         <Container fluid className='hero'>
             <Container>
                 <div className="hero-content">
-                    <h1 className="display-4">Bienvenido a ScriptHive</h1>
+                    <h1 className="display-4 title">Bienvenido a ScriptHive</h1>
                     <p>Desarrolladores Web</p>
                     <p>Aplicaciones profesionales de alto nivel</p>
                 </div>

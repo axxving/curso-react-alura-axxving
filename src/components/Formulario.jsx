@@ -16,7 +16,7 @@ export const Formulario = () => {
     return (
         <Container fluid className='formulario'>
             <Container>
-                <h2>Contáctanos</h2>
+                <h2 className='title'>Agregar un nuevo trabajador</h2>
                 <Form onSubmit={manejarEnvio}>
                     <Row>
                         <Campo titulo="Nombre" controlId="formName" type="text" placeholder="Nombre"  />

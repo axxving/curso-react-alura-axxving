@@ -45,3 +45,21 @@
 .listaOpciones {
     margin-bottom: 15px;
 }
+
+.section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+}
+
+.title {
+    margin-right: 10px;
+    font-weight: bolder;
+}
+
+.iconoMas {
+    width: 50px;
+    cursor: pointer;
+}
