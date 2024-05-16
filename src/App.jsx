@@ -5,14 +5,9 @@ import { Formulario } from './components/Formulario';
 
 import { BotonMas } from './components/MiScriptHive/BotonMas';
 
-//import reactLogo from './assets/react.svg';
-//import viteLogo from '/vite.svg';
-
 export const App = () => {
 
   const [mostrarFormulario, setMostrarFormulario] = useState(true);
-
-  // Ternario -- condicion ?  si es verdadero : si es falso
 
   const cambiarMostrar = () => {
     setMostrarFormulario(!mostrarFormulario);
