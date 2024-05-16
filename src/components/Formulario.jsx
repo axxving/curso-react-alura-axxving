@@ -1,6 +1,5 @@
 import React from 'react';
-import { Container, Row, Form, Button } from 'react-bootstrap';
-import { ChatDotsFill } from 'react-bootstrap-icons';
+import { Container, Row, Form } from 'react-bootstrap';
 import { Campo } from './Campo';
 import { ListaOpciones } from './listaOpciones/ListaOpciones';
 import { Boton } from './listaOpciones/Boton';
@@ -16,22 +15,41 @@ export const Formulario = () => {
     return (
         <Container fluid className='formulario'>
             <Container>
-                <h2 className='title'>Agregar un nuevo trabajador</h2>
+                <h2 className='title m-mb-2'>Agregar un nuevo trabajador</h2>
                 <Form onSubmit={manejarEnvio}>
                     <Row>
-                        <Campo titulo="Nombre" controlId="formName" type="text" placeholder="Nombre"  />
-                        <Campo titulo="Correo" controlId="formEmail" type="email" placeholder="Correo Electrónico" />
+                        <Campo
+                            titulo="Nombre"
+                            controlId="formName"
+                            type="text"
+                            placeholder="Nombre"
+                            required
+                        />
+                        <Campo
+                            titulo="Apellido"
+                            controlId="formSubject"
+                            type="text"
+                            placeholder="Apellido"
+                            required
+                        />
                     </Row>
                     <Row>
-                        <Campo titulo="Puesto" controlId="formPhone" type="tel" placeholder="Puesto" />
-                        <Campo titulo="Foto" controlId="formSubject" type="text" placeholder="Foto" />
+                        <Campo
+                            titulo="Foto"
+                            controlId="formSubject"
+                            type="text"
+                            placeholder="Foto"
+                            required
+                        />
+                        <Campo
+                            titulo="Puesto"
+                            controlId="formPhone"
+                            type="tel"
+                            placeholder="Puesto"
+                            required
+                        />
                     </Row>
-                    <Form.Group controlId="formMessage">
-                        <Form.Control className='form-input' as="textarea" rows={4} placeholder="Mensaje" />
-                    </Form.Group>
-                    <Row>
-                        <ListaOpciones />
-                    </Row>
+                    <ListaOpciones />
                     <Boton title={"Generar"}>
                     </Boton>
                 </Form>
