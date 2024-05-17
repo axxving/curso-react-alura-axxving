@@ -1,14 +1,9 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
 
-export const ListaOpciones = () => {
+export const ListaOpciones = ({ valor, setEquipo }) => {
 
-
-    // Metodo Map -> arreglo.map( (equipo, index) => {
-    //     return <opcion key={index}>{equipo}</option>
-    //})
     const equipos = [
-        "Selecciona",
         "Diseño",
         "Frontend",
         "Backend",
@@ -17,13 +12,29 @@ export const ListaOpciones = () => {
         "UI/UX",
     ];
 
+    const manejarCambio = (e) => {
+        setEquipo(e.target.value);
+    }
+
     return (
         <Form.Group className='listaOpciones' controlId="opciones">
             <Form.Label>Equipos</Form.Label>
-            <Form.Control as="select">
+            <Form.Control 
+                as="select" 
+                value={valor}
+                onChange={manejarCambio}
+            >
+                <option 
+                    value=""
+                    disabled 
+                    defaultValue="" 
+                    hidden 
+                >
+                    Seleccionar equipo
+                </option>
                 {
                     equipos.map((equipo, index) =>
-                        <option key={index}>{equipo}</option>
+                        <option key={index} value={equipo}>{equipo}</option>
                     )
                 }
             </Form.Control>

@@ -10,6 +10,7 @@ export const Formulario = () => {
     const [apellido, setApellido] = useState("");
     const [puesto, setPuesto] = useState("");
     const [foto, setFoto] = useState("");
+    const [equipo, setEquipo] = useState("");
 
     const manejarEnvio = (e) => {
         console.log('Manejar el envio');
@@ -20,6 +21,7 @@ export const Formulario = () => {
             apellido,
             puesto,
             foto,
+            equipo,
         }
 
         console.log(datosAenviar);
@@ -70,8 +72,12 @@ export const Formulario = () => {
                             setValor={setFoto}
                         />
                     </Row>
-                    <ListaOpciones />
-                    <Boton title={"Generar"}>
+                    <ListaOpciones 
+                        valor={equipo}
+                        setEquipo={setEquipo}
+                    />
+                    <Boton
+                        title={"Generar"}>
                     </Boton>
                 </Form>
             </Container>
